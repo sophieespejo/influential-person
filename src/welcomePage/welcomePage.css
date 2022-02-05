@@ -1,0 +1,8 @@
+.welcomeContainer{
+    background-color: white;
+    background-image: url('../assets/6624392.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    height: 90vh;
+}
