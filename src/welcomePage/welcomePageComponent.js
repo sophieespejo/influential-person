@@ -6,7 +6,7 @@ export default function WelcomePage()
 {
     return (
         <Container className="welcomeContainer">
-            <Row className="mt-5 text-center">
+            <Row className="mt-5 pt-5 text-center">
                 <h1>Life of a cruciverbalist: Will Shortz</h1>
             </Row>
         </Container>
