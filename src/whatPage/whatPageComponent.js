@@ -1,5 +1,4 @@
 import {Container, Row, Col, Button, Navbar} from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import '../whoPage/whoPage.css';
 import crosswordGif from '../assets/nytimescrossword.gif';
 

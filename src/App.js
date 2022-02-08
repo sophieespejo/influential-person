@@ -2,10 +2,10 @@ import './App.css';
 import WelcomePageComponent from './welcomePage/welcomePageComponent';
 import WhoPageComponent from './whoPage/whoPageComponent';
 import WhatPageComponent from './whatPage/whatPageComponent';
+import WhyPageComponent from './whyPage/whyPageComponent';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import {LinkContainer} from 'react-router-bootstrap';
 
 
 function App() {
@@ -14,18 +14,19 @@ function App() {
       <BrowserRouter>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <LinkContainer to="/">
+            <Nav.Link href="/">
                 <Navbar.Brand>🅆🄸🄻🄻 🅂🄷🄾🅁🅃🅉</Navbar.Brand>
-            </LinkContainer>
+            </Nav.Link>
             <Nav className="">
-              <LinkContainer to="whoPage">
-                <Nav.Link>Who</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="whatPage">
-                <Nav.Link>What</Nav.Link>
-              </LinkContainer>
-
-              <Nav.Link href="#pricing">Why</Nav.Link>
+              <Nav.Item>
+                <Nav.Link href="whoPage">Who</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="whatPage">What</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="whyPage">Why</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Container>
         </Navbar>
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<WelcomePageComponent/>}/>
           <Route path="whoPage" element={<WhoPageComponent/>}/>
           <Route path="whatPage" element={<WhatPageComponent/>}/>
+          <Route path="whyPage" element={<WhyPageComponent/>}/>
         </Routes>
       </BrowserRouter>
       {/* <WelcomePageComponent /> */}
