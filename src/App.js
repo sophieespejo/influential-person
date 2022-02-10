@@ -19,13 +19,13 @@ function App() {
             </Nav.Link>
             <Nav className="">
               <Nav.Item>
-                <Nav.Link href="whoPage">Who</Nav.Link>
+                <Nav.Link href="whoPage">Who?</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="whatPage">What</Nav.Link>
+                <Nav.Link href="whatPage">What?</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="whyPage">Why</Nav.Link>
+                <Nav.Link href="whyPage">Why?</Nav.Link>
               </Nav.Item>
             </Nav>
           </Container>
