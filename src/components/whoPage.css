@@ -25,6 +25,33 @@
     margin: auto;
 }
 
+.nav-link, .navbar-brand{
+    color: white !important;
+}
+
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.custom-toggler{
+    border-color: white !important;
+}
 .headerTxt{
     font-size: 1.75rem;
     background-color:  rgb(35, 32, 32);
@@ -33,9 +60,16 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+.headerTxt1{
+    font-size: 1.75rem;
+    background-color:  rgb(35, 32, 32);
+    padding: 0px;
+    color: white;
+    border-radius: 10px;
+}
 
 .blockQuoteTxt{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .quote{

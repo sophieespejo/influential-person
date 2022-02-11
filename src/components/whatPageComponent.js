@@ -1,5 +1,5 @@
 import {Container, Row, Col, Card} from 'react-bootstrap';
-import '../whoPage/whoPage.css';
+import './whoPage.css';
 import crosswordGif from '../assets/nytimescrossword.gif';
 import sudokuImg from '../assets/sudoku.png';
 import kenkenImg from '../assets/kenken.png';
@@ -40,9 +40,11 @@ export default function WhatPageComponent()
             <Row className="mt-4">
                 <Col>
                     <Container >
-                        <div className="embed-responsive embed-responsive-16by9">
+                        <div className="youtube-video-container">
                             <iframe 
                                 className = "embed-responsive-item"
+                                width="560"
+                                height="315"
                                 src="https://www.youtube.com/embed/aAqQnXHd7qk" 
                                 title="YouTube video player" 
                                 frameBorder="0" 
@@ -86,8 +88,8 @@ export default function WhatPageComponent()
                                                 console.log(puzzle)
                                         return (
                                         <Col>
-                                            <Card key = {idx}>
-                                                <Card.Img variant="top" src= {puzzle.src} />
+                                            <Card>
+                                                <Card.Img variant="top" src= {puzzle.src} key = {idx}/>
                                                     <Card.Body>
                                                         <Card.Title>{puzzle.title}</Card.Title>
                                                             <Card.Text>
